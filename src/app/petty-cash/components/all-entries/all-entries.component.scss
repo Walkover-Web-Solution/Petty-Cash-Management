@@ -1,0 +1,22 @@
+.all-entry-box {
+  background: #fff;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 6px -1px #0000001A;
+  padding: 15px;
+  position: relative;
+}
+.icon-red-dot {
+  position: absolute;
+  top: -6px;
+  right: 0;
+}
+.entity-img > img {
+  max-height: 45px;
+  min-height: 45px;
+}
+.entity-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 2px;
+  overflow: hidden;
+}

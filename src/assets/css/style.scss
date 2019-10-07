@@ -1,0 +1,283 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lato', sans-serif;
+  color: #333333;
+  background: #F7F8FA;
+}
+a {
+  color: #27A1E4;
+}
+$white: #fff;
+$black: #000;
+$success: #67AA5A;
+$danger: #fff;
+$gray: #999999;
+$primary: #45A7E6;
+$warning: #F2913B;
+$dark-blue: #0B1B46;
+$dark-green: #19BC9C;
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0px;
+}
+h1,h2,h3,h4,h5,h6,p {
+  margin-bottom: 5px;
+}
+.nowrap {
+  white-space: nowrap;
+}
+button,button:focus {outline: none;box-shadow: none;}
+.d-block {display: block;}
+.d-flex {display: flex;}
+.d-inline-block {display: inline-block;}
+.justify-content-between {
+  justify-content: space-between;
+}
+.list-style-none {
+  list-style-type: none;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.main-page {
+  display: block;
+  width: 360px;
+  background: #F7F8FA;
+  margin: 0 auto;
+}
+a, a:hover {
+  text-decoration: none;
+}
+.btn {
+  color: #b9b9b9;
+  font-size: 16px;
+  font-weight: normal;
+}
+.width-100 {width: 100%;}
+.text-warning {color: $warning;}
+.text-danger {color: $danger;}
+.text-success {color: $success;}
+.text-primary {color: $primary;}
+.normal {font-weight: normal;}
+.bold {font-weight: bold;}
+.font-10 {font-size: 10px;}
+.font-11 {font-size: 11px;}
+.font-12 {font-size: 12px;}
+.font-13 {font-size: 13px;}
+.font-14 {font-size: 14px;}
+.font-16 {font-size: 16px;}
+.font-18 {font-size: 18px;}
+.font-20 {font-size: 20px;}
+.text-white {
+  color: $white;
+}
+.text-gray {
+  color: $gray;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.dark-green {
+  color: $dark-green;
+}
+.m-0 {
+  margin: 0px;
+}
+.mt-0 {margin-top: 0px;}
+.mb-0 {margin-bottom: 0px;}
+.mr-0 {margin-right: 0px;}
+.ml-0 {margin-left: 0px;}
+.mt-05 {margin-top: 5px;}
+.mb-05 {margin-bottom: 5px;}
+.mr-05 {margin-right: 5px;}
+.ml-05 {margin-left: 5px;}
+.mt-1 {margin-top: 10px;}
+.mb-1 {margin-bottom: 10px;}
+.mr-1 {margin-right: 10px;}
+.ml-1 {margin-left: 10px;}
+.mt-2 {margin-top: 20px;}
+.mb-2 {margin-bottom: 20px;}
+.mr-2 {margin-right: 20px;}
+.ml-2 {margin-left: 20px;}
+.mt-3 {margin-top: 30px;}
+.mb-3 {margin-bottom: 30px;}
+.mr-3 {margin-right: 30px;}
+.ml-3 {margin-left: 30px;}
+
+// padding
+.p-0 {
+  padding: 0px;
+}
+.p-1 {padding: 10px;}
+.p-2 {padding: 20px;}
+.p-3 {padding: 30px;}
+.p-4 {padding: 40px;}
+.p-5 {padding: 50px;}
+.pt-0 {padding-top: 0px;}
+.pb-0 {padding-bottom: 0px;}
+.pr-0 {padding-right: 0px;}
+.pl-0 {padding-left: 0px;}
+.pt-05 {padding-top: 5px;}
+.pb-05 {padding-bottom: 5px;}
+.pr-05 {padding-right: 5px;}
+.pl-05 {padding-left: 5px;}
+.pt-1 {padding-top: 10px;}
+.pb-1 {padding-bottom: 10px;}
+.pr-1 {padding-right: 10px;}
+.pl-1 {padding-left: 10px;}
+.pt-2 {padding-top: 20px;}
+.pb-2 {padding-bottom: 20px;}
+.pr-2 {padding-right: 20px;}
+.pl-2 {padding-left: 20px;}
+.pt-3 {padding-top: 30px;}
+.pb-3 {padding-bottom: 30px;}
+.pr-3 {padding-right: 30px;}
+.pl-3 {padding-left: 30px;}
+.pt-4 {padding-top: 40px;}
+.pb-4 {padding-bottom: 40px;}
+.pr-4 {padding-right: 40px;}
+.pl-4 {padding-left: 40px;}
+.pt-5 {padding-top: 50px;}
+.pb-5 {padding-bottom: 50px;}
+.pr-5 {padding-right: 50px;}
+.pl-5 {padding-left: 50px;}
+.pt-15 {padding-top: 15px;}
+.pb-15 {padding-bottom: 15px;}
+.pr-15 {padding-right: 15px;}
+.pl-15 {padding-left: 15px;}
+.cdk-overlay-pane {
+  max-width: 90vw !important;
+  overflow-y: auto;
+}
+.btn-link {
+  color: #27A1E4;
+  font-weight: normal;
+}
+.mat-dialog-container {
+  padding: 0px !important;
+  background: none !important;
+}
+.action-icon {
+  position: fixed !important;
+  right: 15px;
+  bottom: 10px;
+  background: #19BC9C;
+  color: #fff;
+  width: 55px;
+  min-width: 55px !important;
+  height: 55px;
+  line-height: 55px !important;
+  border-radius: 90px !important;
+}
+.mat-menu-content {
+  overflow: hidden;
+}
+.drop-down-list {
+  width: 200px;
+}
+.drop-down-list li .mat-button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+}
+.cdk-overlay-pane  {
+  pointer-events: auto;
+  box-shadow: 0 3px 6px 0 #c1c1c1;
+}
+.mat-menu-panel {
+  border-radius: 0px !important;
+}
+.custom-modal {
+  background: #fff;
+}
+.modal-head {
+  border-bottom: 1px solid #333;
+  padding: 20px 15px;
+}
+.modal-footer {
+  border-top: 1px solid;
+  padding: 10px;
+}
+.filter-tabs .mat-tab-label-container .mat-tab-labels {
+  display: block;
+  text-align: left;
+}
+.filter-tabs .mat-tab-label-container .mat-tab-labels .mat-tab-label {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: end;
+  padding: 0px;
+  min-width: 100%;
+  height: 36px;
+  padding: 0 15px;
+  font-size: 16px;
+}
+.filter-tabs .mat-tab-header-pagination {
+  display: none !important;
+}
+.filter-tabs .mat-tab-header {
+  width: 130px;
+}
+.filter-tabs .mat-tab-body-wrapper {
+  display: block;
+  width: 100%;
+  background: #fff;
+  padding: 15px;
+  box-shadow: -1px -1px 7px #ccc;
+}
+.filter-tabs .mat-tab-label-container .mat-tab-labels .mat-tab-label.mat-tab-label-active {
+  background: #E5E5E5;
+}
+.filter-tabs .mat-tab-group {
+  display: flex;
+  flex-direction: initial;
+  height: calc(100vh - 66px);
+}
+.date-picker .mat-form-field-infix {
+  padding: 0px;
+  border: 0px solid #ccc;
+  width: 100%;
+}
+.date-picker .mat-form-field-infix .mat-input-element {
+  height: 32px;
+  padding: 0 10px;
+  border: 1px solid #DBDBDB;
+  font-size: 14px;
+  color: #484848;
+  border-radius: 2px;
+}
+.date-picker .mat-form-field-appearance-legacy .mat-form-field-underline,
+.date-picker .mat-form-field-appearance-legacy .mat-form-field-subscript-wrapper {
+  display: none;
+}
+.date-picker .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+  padding-bottom: 0px;
+}
+.select-list .mat-list-item .mat-list-item-content {
+  padding: 0 !important;
+}
+.select-list .mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+  height: 42px;
+}
+.select-box .mat-selection-list .mat-list-item:first-child {
+  font-weight: 500;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .main-page {
+    width: 100%;
+  }
+}

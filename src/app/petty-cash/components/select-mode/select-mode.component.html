@@ -1,0 +1,21 @@
+<div class="main-select-list">
+    <div class="modal-head">
+      <h3 class="mb-0">Select Mode</h3>
+    </div>
+    <div class="select-list">
+      <ul class="mt-0">
+        <li *ngFor="let SelectWithdrawal of SelectWithdrawalAC; let i = index">
+          <input name="Sales" id="{{'select' + i}}" type="radio">
+          <label for="{{'select' + i}}" class="d-flex justify-content-between">{{SelectWithdrawal.selectItem}}
+            <span class="font-12">{{SelectWithdrawal.itemPrice | currency:'USD'}}</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="modal-footer text-right">
+      <div class="clearfix">
+        <a href="javascript:void(0)" mat-button class="btn text-primary">Next</a>
+      </div>
+    </div>
+  </div>

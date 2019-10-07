@@ -28,7 +28,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss",
+              "src/assets/css/style.scss",
+              "src/assets/fonts/icomoon/icomoon.css",
+              "src/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
             ],
             "scripts": []
           },
@@ -93,7 +97,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss",
+              "src/assets/css/style.scss",
+              "src/assets/fonts/icomoon/icomoon.css",
+              "src/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
             ],
             "scripts": []
           }
@@ -124,6 +132,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "petty-cash-management"
 }

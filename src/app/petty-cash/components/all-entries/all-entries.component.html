@@ -1,0 +1,26 @@
+<div class="justify-content-between d-flex">
+  <p class="mb-0 bold p-1 text-gray">Thu, 8 Aug 19</p>
+  <p class="mb-0 bold p-1 text-gray"><i class="icon-rupess font-12"></i> 2,200.00</p>
+</div>
+
+<div class="all-entry-box" *ngFor="let allEntry of allEntries">
+  <span class="icon-red-dot" *ngIf="allEntry.activeProduct"><span class="path1"></span><span class="path2"></span></span>
+  <div class="justify-content-between d-flex">
+    <p class="{{allEntry.colorheading}} mb-0">
+      <i class="{{allEntry.watchIcon}}" *ngIf="allEntry.watchIcon"></i>
+      <i class="{{allEntry.checkIcon}} font-11" *ngIf="allEntry.checkIcon"></i>
+      <i class="{{allEntry.iconClose}} font-11" *ngIf="allEntry.iconClose"></i>
+      {{allEntry.productType}}
+    </p>
+    <p class="mb-0">
+      <i class="{{allEntry.cardCash}} text-gray font-12 mr-05" *ngIf="allEntry.cardCash"></i>
+       <i class="{{allEntry.paymentCard}} text-gray font-12 mr-05" *ngIf="allEntry.paymentCard"></i>
+       <i class="icon-rupess font-12"></i> {{allEntry.boxPrice}}</p>
+  </div>
+  <p *ngIf="allEntry.discription" class="text-gray font-13 mt-05">{{allEntry.discription}}</p>
+  <div class="entity-img" *ngIf="allEntry.ProductImg">
+    <img src="{{allEntry.ProductImg}}" *ngIf="allEntry.ProductImg" alt="">
+  </div>
+</div>
+
+<a href="javascript:void(0)" mat-raised-button (click)="openDialog()" class="action-icon"><i class="icon-plus"></i></a>

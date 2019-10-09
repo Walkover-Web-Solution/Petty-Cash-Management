@@ -1,0 +1,15 @@
+<app-header></app-header>
+<main class="main-page mt-1">
+  <div class="clearfix">
+    <div class="select-list">
+      <ul class="mt-0">
+        <li *ngFor="let SelectWithdrawal of SelectWithdrawalAC; let i = index">
+          <input name="Sales" id="{{'select' + i}}" type="radio">
+          <label for="{{'select' + i}}" class="d-flex justify-content-between pointer">{{SelectWithdrawal.selectItem}}
+            <span class="normal">{{SelectWithdrawal.itemPrice | currency:'USD'}}</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>

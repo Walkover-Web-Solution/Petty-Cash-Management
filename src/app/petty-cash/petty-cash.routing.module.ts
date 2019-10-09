@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { PettyCashComponent } from './petty-cash.component';
 import { AccountTypeComponent } from './components/account-type/account-type.component';
 import { FilterComponent } from './components/filter/filter.component';
+import { BalanceComponent } from './components/balance/balance.component';
 
 @NgModule({
   imports: [
@@ -10,6 +11,7 @@ import { FilterComponent } from './components/filter/filter.component';
         { path: '', component: PettyCashComponent, pathMatch: 'full' },
         { path: 'users', component: AccountTypeComponent, pathMatch: 'full' },
         { path: 'filter', component: FilterComponent, pathMatch: 'full' },
+        { path: 'balance', component: BalanceComponent, pathMatch: 'full' },
     ])
   ],
   exports: [RouterModule]

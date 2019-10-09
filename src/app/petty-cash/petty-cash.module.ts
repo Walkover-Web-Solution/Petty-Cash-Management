@@ -58,11 +58,12 @@ import { TotalAmountComponent } from './components/total-amount/total-amount.com
 import { SelectModeComponent } from './components/select-mode/select-mode.component';
 import { SelectCreditorsComponent } from './components/select-creditors/select-creditors.component';
 import { DeleteEnryComponent } from './components/delete-enry/delete-enry.component';
+import { BalanceComponent } from './components/balance/balance.component';
 
 
 
 @NgModule({
-  declarations: [PettyCashComponent, AllEntriesComponent, SelectActionComponent, CalculatorComponent, HeaderComponent, WithdrawalDepositComponent, SelectListComponent, SelectSelectWithdrawalAcComponent, AccountTypeComponent, ModalExportExcelComponent, FilterComponent, TotalAmountComponent, SelectModeComponent, SelectCreditorsComponent, DeleteEnryComponent],
+  declarations: [PettyCashComponent, AllEntriesComponent, SelectActionComponent, CalculatorComponent, HeaderComponent, WithdrawalDepositComponent, SelectListComponent, SelectSelectWithdrawalAcComponent, AccountTypeComponent, ModalExportExcelComponent, FilterComponent, TotalAmountComponent, SelectModeComponent, SelectCreditorsComponent, DeleteEnryComponent, BalanceComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,

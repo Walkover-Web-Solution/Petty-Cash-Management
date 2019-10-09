@@ -1,29 +1,13 @@
-<div class="header">
+<!-- <div class="header">
   <div class="inner-header justify-content-between">
     <div class="toggle-nav">
-      <a href="#" class="btn-toggle" (click)="ToggleClick()">
+      <a href="javascript:void(0)" class="btn-toggle" (click)="ToggleClick()">
         <i class="icon-bar"></i>
       </a>
-
-      <div class="navi" [ngClass]="HeaderToggle ? 'in': 'out'">
-        <div class="uk-nav-head">
-          <a href="javascript:void(0)" class="text-white d-inline-block mr-2">
-            <i class="icon-arrow-left"></i>
-          </a> Pratik Piplode
-        </div>
-
-        <div class="nav-list">
-          <ul>
-            <li><a href="javascript:void(0)"></a></li>
-            <li><a href="javascript:void(0)"></a></li>
-            <li><a href="javascript:void(0)"></a></li>
-            <li><a href="javascript:void(0)"></a></li>
-          </ul>
-        </div>
-
-      </div>
-
     </div>
+
+
+
 
     <div class="header-total pl-3">
       <h2>124 All Entries</h2>
@@ -54,7 +38,26 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+
+<div class="navi" [ngClass]="HeaderToggle ? 'in': 'out'">
+      <div class="uk-nav-head">
+          <a href="javascript:void(0)" class="text-white d-inline-block mr-2 text-white" (click)="ToggleClick()">
+            <i class="icon-arrow-left"></i>
+          </a> Pratik Piplode
+        </div>
+
+        <div class="nav-list pt-2">
+          <ul class="m-0 p-0">
+            <li><a href="javascript:void(0)">Balance</a></li>
+            <li><a href="javascript:void(0)">Home</a></li>
+            <li><a href="javascript:void(0)">Settings</a></li>
+            <li><a href="javascript:void(0)" class="bold">Walkover Web Solutio… <i class="icon-copy pull-right"></i></a></li>
+            <li><a href="javascript:void(0)">Logout</a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="bg-nav" [ngClass]="HeaderToggle ? 'in': 'out'"></div>
 
 
 <!-- header green -->
@@ -72,6 +75,25 @@
     </div>
   </div>
 </div> -->
+
+
+
+<!-- header green 2 -->
+<div class="header header-green">
+    <div class="inner-header align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+      <div class="toggle-nav">
+        <a href="javascript:void(0)" class="btn-toggle" (click)="ToggleClick()"><i class="icon-bar"></i></a>
+      </div>
+      <div class="header-total pl-3">
+        <h3 class="normal mb-0"> Balance</h3>
+      </div>
+      </div>
+
+    <p class="mb-0 font-14"><a href="javascript:void()0" class="text-white"><i class="icon-arrow-down font-10"></i> Request</a></p>
+
+    </div>
+  </div>
 
 
 

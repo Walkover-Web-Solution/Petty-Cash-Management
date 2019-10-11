@@ -1,0 +1,128 @@
+<div class="header">
+  <div class="inner-header justify-content-between">
+    <div class="toggle-nav">
+      <a href="javascript:void(0)" class="btn-toggle" (click)="ToggleClick()">
+        <i class="icon-bar"></i>
+      </a>
+    </div>
+    <div class="header-total pl-3">
+      <h2>124 All Entries</h2>
+      <h3 class="normal"> {{allEntries | currency:'&#8377;'}}</h3>
+    </div>
+
+    <div class="right-icon text-center">
+      <div class="clearfix">
+        <a href="javascript:void(0)" class="text-white d-block" [matMenuTriggerFor]="menu">
+          <i class="icon-ellipsis"></i>
+        </a>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <ul class="list-style-none p-0 m-0 drop-down-list">
+            <li>
+              <a href="javascript:void(0)" mat-button routerLink="/filter">Filter</a>
+            </li>
+            <li>
+              <button mat-button (click)="openDialog()">Export to Excel</button>
+            </li>
+          </ul>
+        </mat-menu>
+      </div>
+
+      <div class="clearfix">
+        <a href="javascript:void(0)" class="text-white d-block icon-arrow-dropdown" (click)="totalAmount()">
+          <i class="icon-arrow-down"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="navi" [ngClass]="HeaderToggle ? 'in': 'out'">
+  <div class="uk-nav-head">
+    <a href="javascript:void(0)" class="text-white d-inline-block mr-2 text-white" (click)="ToggleClick()">
+      <i class="icon-arrow-left"></i>
+    </a> Pratik Piplode
+  </div>
+
+  <div class="nav-list pt-2">
+    <ul class="m-0 p-0">
+      <li>
+        <a href="javascript:void(0)" routerLink="/balance" routerLinkActive="active">Balance</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" routerLink="/">Home</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" routerLink="/settings">Settings</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="bold" routerLink="/switch-company">Walkover Web Solutio…
+          <i class="icon-copy pull-right"></i>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">Logout</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="bg-nav" [ngClass]="HeaderToggle ? 'in': 'out'"></div>
+
+
+<!-- header green -->
+<!-- <div class="header header-green">
+  <div class="inner-header">
+    <div class="toggle-nav">
+      <a href="#" class="btn-toggle">
+        <i class="icon-arrow-left"></i>
+      </a>
+    </div>
+
+    <div class="header-total pl-3">
+      <h2>Withdrawal/Deposit</h2>
+      <h3 class="normal mb-0"> {{WithDrawalDeposit | currency:'USD'}}</h3>
+    </div>
+  </div>
+</div> -->
+
+
+
+<!-- header green 2 -->
+<!-- <div class="header header-green">
+  <div class="inner-header align-items-center justify-content-between">
+    <div class="d-flex align-items-center">
+      <div class="toggle-nav">
+        <a href="javascript:void(0)" class="btn-toggle" (click)="ToggleClick()">
+          <i class="icon-bar"></i>
+        </a>
+      </div>
+      <div class="header-total pl-3">
+        <h3 class="normal mb-0"> Balance</h3>
+      </div>
+    </div>
+
+    <p class="mb-0 font-14">
+      <a href="javascript:void()0" class="text-white">
+        <i class="icon-arrow-down font-10"></i> Request</a>
+    </p>
+
+  </div>
+</div> -->
+
+
+
+<!-- <div class="header">
+    <div class="inner-header justify-content-between align-items-center">
+      <div class="toggle-nav">
+          <a href="#" class="btn-toggle">
+              <i class="icon-arrow-left"></i>
+            </a>
+      </div>
+
+      <div class="header-total pl-3">
+        <h3 class="mb-0 font-20 normal">0 Entries</h3>
+      </div>
+      <a href="javascript:void(0)" class="nowrap font-14">Clear all filter</a>
+    </div>
+  </div> -->

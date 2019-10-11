@@ -1,0 +1,93 @@
+<main class="main-page">
+  <app-header></app-header>
+
+  <div class="filter-tabs">
+    <mat-tab-group animationDuration="0ms">
+      <mat-tab label="Date">
+        <div class="mb-3 date-picker">
+          <label class="font-14">Start Date</label>
+          <mat-form-field>
+            <input matInput [matDatepicker]="picker" (focus)="picker.open()" [formControl]="date">
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="form-group date-picker">
+          <label class="font-14">End Date</label>
+          <mat-form-field>
+            <input matInput [matDatepicker]="picker2" (focus)="picker2.open()" [formControl]="date">
+            <mat-datepicker #picker2></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </mat-tab>
+      <!-- tab end -->
+
+      <mat-tab label="Category">
+
+        <div class="clearfix text-right">
+          <a href="javascript:void(0)" class="btn-link" mat-button>Clear</a>
+          <a href="javascript:void(0)" class="btn-link pr-0" mat-button>Select All</a>
+        </div>
+
+        <div class="select-list">
+          <mat-selection-list #shoes>
+            <mat-list-option *ngFor="let shoe of typesOfShoes">
+              {{shoe}}
+            </mat-list-option>
+          </mat-selection-list>
+        </div>
+
+      </mat-tab>
+
+      <mat-tab label="Mode">
+        <div class="clearfix text-right">
+          <a href="javascript:void(0)" class="btn-link" mat-button>Clear</a>
+          <a href="javascript:void(0)" class="btn-link pr-0" mat-button>Select All</a>
+        </div>
+
+        <div class="select-list">
+          <mat-selection-list #ModeSelect>
+            <mat-list-option *ngFor="let mode of ModeSelected">
+              {{mode}}
+            </mat-list-option>
+          </mat-selection-list>
+        </div>
+      </mat-tab>
+
+      <mat-tab label="Entries">
+
+        <div class="clearfix text-right">
+          <a href="javascript:void(0)" class="btn-link" mat-button>Clear</a>
+          <a href="javascript:void(0)" class="btn-link pr-0" mat-button>Select All</a>
+        </div>
+
+        <div class="select-list select-box mb-2">
+          <mat-selection-list #entry>
+              <mat-list-option *ngFor="let entry of entries">
+                {{entry}}
+              </mat-list-option>
+          </mat-selection-list>
+        </div>
+
+        <div class="select-list select-box">
+          <mat-selection-list #purchase>
+              <mat-list-option *ngFor="let purchase of purchased">
+                {{purchase}}
+              </mat-list-option>
+          </mat-selection-list>
+        </div>
+
+      </mat-tab>
+
+      <mat-tab label="Entries">
+          <div class="select-list">
+              <mat-selection-list #user>
+                  <mat-list-option *ngFor="let user of users">
+                    {{user}}
+                  </mat-list-option>
+              </mat-selection-list>
+            </div>
+      </mat-tab>
+
+    </mat-tab-group>
+  </div>
+</main>

@@ -1,0 +1,18 @@
+<div class="main-select-list">
+  <div class="modal-head">
+    <h3 class="mb-0">Select Sales/Income A/c</h3>
+  </div>
+  <div class="select-list">
+    <ul class="mt-0">
+      <li *ngFor="let selectList of selectLists; let i = index">
+        <input name="Sales" id="{{'select' + i}}" type="radio">
+        <label for="{{'select' + i}}">{{selectList.selectItem}} <i class="icon-right"></i></label>
+      </li>
+    </ul>
+  </div>
+
+  <div class="modal-footer text-right">
+    <a href="javascript:void(0)" mat-button class="btn">Cancel</a>
+    <a href="javascript:void(0)" mat-button class="btn dark-green">Next</a>
+  </div>
+</div>

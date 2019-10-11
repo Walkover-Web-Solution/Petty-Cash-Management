@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?j2ge2r');
+  src:  url('fonts/icomoon.eot?j2ge2r#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?j2ge2r') format('truetype'),
+    url('fonts/icomoon.woff?j2ge2r') format('woff'),
+    url('fonts/icomoon.svg?j2ge2r#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-external-link:before {
+  content: "\e917";
+}
+.icon-bar:before {
+  content: "\e913";
+}
+.icon-card:before {
+  content: "\e900";
+}
+.icon-cash:before {
+  content: "\e901";
+}
+.icon-dollor-card:before {
+  content: "\e902";
+}
+.icon-Group-4612:before {
+  content: "\e903";
+}
+.icon-Group-4614:before {
+  content: "\e904";
+}
+.icon-hand:before {
+  content: "\e905";
+}
+.icon-red-dot .path1:before {
+  content: "\e906";
+  color: rgb(238, 9, 9);
+}
+.icon-red-dot .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-upload:before {
+  content: "\e908";
+}
+.icon-income:before {
+  content: "\e909";
+}
+.icon-rupess:before {
+  content: "\e90a";
+}
+.icon-caret:before {
+  content: "\e90b";
+}
+.icon-hand-down:before {
+  content: "\e90c";
+}
+.icon-pencil:before {
+  content: "\e90d";
+}
+.icon-Path-2418:before {
+  content: "\e90e";
+}
+.icon-dollor:before {
+  content: "\e90f";
+  color: #484848;
+}
+.icon-check:before {
+  content: "\e910";
+}
+.icon-download:before {
+  content: "\e911";
+}
+.icon-close:before {
+  content: "\e912";
+}
+.icon-ellipsis:before {
+  content: "\e914";
+}
+.icon-arrow-down:before {
+  content: "\e915";
+}
+.icon-path-6:before {
+  content: "\e916";
+}
+.icon-plus:before {
+  content: "\e918";
+}
+.icon-minus:before {
+  content: "\e919";
+}
+.icon-right:before {
+  content: "\e91a";
+}
+.icon-calender:before {
+  content: "\e91b";
+}
+.icon-arrow-right:before {
+  content: "\e91c";
+}
+.icon-sort:before {
+  content: "\e91d";
+}
+.icon-arrow-left:before {
+  content: "\e91e";
+}
+.icon-info:before {
+  content: "\e91f";
+}
+.icon-contact:before {
+  content: "\e920";
+}
+.icon-image:before {
+  content: "\e921";
+}
+.icon-watch:before {
+  content: "\e922";
+}
+.icon-payment:before {
+  content: "\e923";
+}
+.icon-Payment:before {
+  content: "\e924";
+}
+.icon-switch-icon:before {
+  content: "\e925";
+}

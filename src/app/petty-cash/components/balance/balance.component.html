@@ -1,0 +1,31 @@
+<main class="main-page mt-1">
+
+
+
+  <div class="clearfix">
+    <div class="select-list">
+      <ul class="mt-0">
+        <li *ngFor="let SelectWithdrawal of SelectWithdrawalAC; let i = index">
+          <input name="Sales" id="{{'select' + i}}" type="radio">
+          <label for="{{'select' + i}}" class="d-flex justify-content-between pointer" matRipple>{{SelectWithdrawal.selectItem}}
+            <span class="normal">{{SelectWithdrawal.itemPrice | currency:'USD'}}</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="balance-list p-1">
+      <p class="bold text-gray">Transaction Log of Cash A/c</p>
+        <ul class="mt-0 p-0 list-style-none">
+          <li *ngFor="let TransactionLogs of TransactionLog;">
+            <div class="clearfix">
+              <p class="font-12 mb-0" *ngIf="TransactionLogs.date">{{TransactionLogs.date}}</p>
+              <p class="font-14 mb-0" *ngIf="TransactionLogs.amountType">{{TransactionLogs.amountType}}</p>
+            </div>
+            <p *ngIf="TransactionLogs.withdrawal" class="font-14 text-danger"><i class="font-12 middle icon-rupees"></i> {{TransactionLogs.withdrawal}}</p>
+            <p *ngIf="TransactionLogs.amountGet" class="font-14 text-success"><i class="font-12 middle icon-dollor"></i> {{TransactionLogs.amountGet}}</p>
+          </li>
+        </ul>
+      </div>
+  </div>
+</main>

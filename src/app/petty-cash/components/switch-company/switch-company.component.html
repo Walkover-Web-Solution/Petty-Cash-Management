@@ -1,0 +1,28 @@
+<main class="main-page">
+  <!-- header green -->
+  <div class="header">
+    <div class="inner-header">
+      <div class="toggle-nav">
+        <a href="javascript:void(0)" routerLink="/" class="btn-toggle">
+          <i class="icon-arrow-left"></i>
+        </a>
+      </div>
+      <div class="header-total pl-3">
+        <h2 class="mb-0">Switch Company</h2>
+      </div>
+    </div>
+  </div>
+    <div class="white-box">
+        <p class="bold text-gray font-14">Select Company</p>
+        <div class="select-list">
+          <ul class="mt-0">
+            <li *ngFor="let selectList of selectLists; let i = index">
+              <input name="Sales" id="{{'select' + i}}" type="radio">
+              <label for="{{'select' + i}}">{{selectList.selectItem}}
+                <i class="icon-right"></i>
+              </label>
+            </li>
+          </ul>
+        </div>
+    </div>
+</main>

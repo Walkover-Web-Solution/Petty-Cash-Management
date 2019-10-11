@@ -1,0 +1,59 @@
+.main-select-list {
+  background: #fff;
+}
+.modal-head {
+  border-bottom: 1px solid #333;
+  padding: 20px 15px;
+}
+.select-list {
+  ul {
+    padding: 0px;
+    list-style-type: none;
+    min-height: 60vh;
+    overflow-y: auto;
+  }
+}
+.select-list {
+  ul {
+    li {
+      padding: 0px;
+      list-style-type: none;
+      position: relative;
+      cursor: pointer;
+    }
+  }
+}
+.select-list {
+  ul {
+    li {
+      label {
+        padding: 15px;
+        font-size: 14px;
+        color: #333333;
+      }
+    }
+  }
+}
+.select-list ul li input[type="radio"]:checked + label {
+  background: #F0F0F1;
+}
+.select-list {
+  ul {
+    li {
+      label {
+        span {
+          color: #999999;;
+        }
+      }
+    }
+  }
+}
+
+.select-list ul li input[type="radio"] {
+  visibility: hidden;
+  display: none;
+}
+.modal-footer {
+  border-top: 1px solid;
+  padding: 10px;
+}

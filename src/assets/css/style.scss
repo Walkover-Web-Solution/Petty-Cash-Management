@@ -1,3 +1,7 @@
+
+
+
+
 body {
   margin: 0px;
   padding: 0px;
@@ -11,7 +15,7 @@ a {
 $white: #fff;
 $black: #000;
 $success: #67AA5A;
-$danger: #fff;
+$danger: #CC4949;
 $gray: #999999;
 $primary: #45A7E6;
 $warning: #F2913B;
@@ -41,9 +45,157 @@ button,button:focus {outline: none;box-shadow: none;}
 .align-items-center {
   align-items: center;
 }
+.white-box {
+  background: #fff;
+  padding: 15px;
+  box-shadow: 3px 3px 6px #eaeaea;
+  margin-bottom: 10px;
+}
 .align-items-end {
   align-items: flex-end;
 }
+// select option css start
+.select-style {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.select-style:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-top: -1.5px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #7d7d7d;
+}
+.select-style select {
+  width: 100%;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 12px 22px 12px 0px;
+  border: 0px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+}
+.select-style select:focus {
+  outline: none;
+  box-shadow: none;
+}
+// select option css end
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+  background-color: #96d0a6;
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+  background-color: #089328;
+}
+// header css
+.header {
+  background: #0B1B46;
+  padding: 15px;
+  position: relative;
+  color: #fff;
+}
+.inner-header {
+  display: flex;
+  align-items: center;
+}
+.btn-toggle {
+  display: inline-block;
+  color: #fff;
+  padding: 7px 0;
+}
+.header-total h2 {
+  font-weight: normal;
+  margin-bottom: 17px;
+  font-size: 20px;
+}
+.navi {
+  position: fixed;
+  top: 0;
+  left: -255px;
+  bottom: 0;
+  background: #fff;
+  overflow-y: auto;
+  border: 0;
+  width: 255px;
+  height: 100vh;
+  z-index: 99;
+  box-shadow: 0px 7px 7px rgba(31, 31, 31, 0.36);
+  transition: .5s all ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.navi.in {
+  left: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.bg-nav.in {
+  visibility: visible;
+  opacity: 1;
+}
+.bg-nav {
+  position: fixed;
+  background: rgba(10, 10, 10, 0.38);
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  opacity: 0;
+  transition: .5s all ease;
+  visibility: hidden;
+}
+.uk-nav-head {
+  background: #0B1B46;
+  padding: 25px 15px;
+  color: #fff;
+}
+.example-container {
+  width: 500px;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.example-sidenav {
+  padding: 20px;
+}
+.icon-arrow-dropdown {
+  margin-top: 38px;
+  font-size: 9px;
+}
+.header-green {
+  background: #67AA5A;
+}
+.header-green h2 {
+  line-height: 15px;
+}
+.header-total {
+  width: 100%;
+}
+.nav-list > ul > li > a {
+  display: block;
+  padding: 15px;
+  border-bottom: 1px solid #E9E9E9;
+  color: #484848;
+}
+
+
 .main-page {
   display: block;
   width: 360px;
@@ -275,6 +427,34 @@ a, a:hover {
 .select-box .mat-selection-list .mat-list-item:first-child {
   font-weight: 500;
 }
+.timepicker__header {
+  background-color: #019588 !important;
+}
+.clock-face__number > span.active {
+  background-color: #019588 !important;
+  color: #019588 !important;
+}
+.timepicker-button {
+  color: #019588 !important;
+}
+.timepicker-dial__control:focus {
+  outline: none;
+}
+.clock-face__clock-hand {
+  background-color: #019588 !important;
+}
+.timePicker {
+  border: 0px;
+  font-size: 16px;
+  text-align: right;
+  width: 80px;
+}
+.timePicker:focus {
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+}
+
 
 
 @media only screen and (max-width: 767px) {

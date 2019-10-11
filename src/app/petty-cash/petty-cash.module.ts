@@ -8,6 +8,8 @@ import { SelectActionComponent } from './components/select-action/select-action.
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { HeaderComponent } from './components/header/header.component';
 import { WithdrawalDepositComponent } from './components/withdrawal-deposit/withdrawal-deposit.component';
+import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+
 //import { MaterialModule } from './material.module';
 
 
@@ -59,11 +61,14 @@ import { SelectModeComponent } from './components/select-mode/select-mode.compon
 import { SelectCreditorsComponent } from './components/select-creditors/select-creditors.component';
 import { DeleteEnryComponent } from './components/delete-enry/delete-enry.component';
 import { BalanceComponent } from './components/balance/balance.component';
+import { SettingsComponent } from './components/settings/settings.component';
+import { ExpanseCategoriesComponent } from './components/expanse-categories/expanse-categories.component';
+import { SwitchCompanyComponent } from './components/switch-company/switch-company.component';
 
 
 
 @NgModule({
-  declarations: [PettyCashComponent, AllEntriesComponent, SelectActionComponent, CalculatorComponent, HeaderComponent, WithdrawalDepositComponent, SelectListComponent, SelectSelectWithdrawalAcComponent, AccountTypeComponent, ModalExportExcelComponent, FilterComponent, TotalAmountComponent, SelectModeComponent, SelectCreditorsComponent, DeleteEnryComponent, BalanceComponent],
+  declarations: [PettyCashComponent, AllEntriesComponent, SelectActionComponent, CalculatorComponent, HeaderComponent, WithdrawalDepositComponent, SelectListComponent, SelectSelectWithdrawalAcComponent, AccountTypeComponent, ModalExportExcelComponent, FilterComponent, TotalAmountComponent, SelectModeComponent, SelectCreditorsComponent, DeleteEnryComponent, BalanceComponent, SettingsComponent, ExpanseCategoriesComponent, SwitchCompanyComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
@@ -105,8 +110,10 @@ import { BalanceComponent } from './components/balance/balance.component';
     MatSortModule,
     MatTableModule,
     MatNativeDateModule,
-    MatDatepickerModule
-    //MaterialModule
+    MatDatepickerModule,
+    //MaterialModule end
+    NgxMaterialTimepickerModule,
+
   ],
   exports: [
     CommonModule,

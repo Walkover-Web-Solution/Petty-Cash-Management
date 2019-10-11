@@ -14,6 +14,14 @@ export class BalanceComponent implements OnInit {
     {selectItem: 'Bank of America A/c', itemPrice:1500},
   ];
 
+  TransactionLog = [
+    {date: '12/08/2019', amountType: 'Amount received', amountGet: 3500, withdrawal: null},
+    {date: '12/08/2019', amountType: 'Withdrawn', amountGet: null, withdrawal: 3500},
+    {date: '12/08/2019', amountType: 'Amount transferred', amountGet: 3500, withdrawal: null},
+    {date: '12/08/2019', amountType: 'Withdrawn', amountGet: null, withdrawal: 3500},
+    {date: '12/08/2019', amountType: 'Amount transferred', amountGet: 3500, withdrawal: null},
+  ];
+
   constructor() { }
 
   ngOnInit() {

@@ -1,14 +1,10 @@
-<!-- <div class="header">
+<div class="header">
   <div class="inner-header justify-content-between">
     <div class="toggle-nav">
       <a href="javascript:void(0)" class="btn-toggle" (click)="ToggleClick()">
         <i class="icon-bar"></i>
       </a>
     </div>
-
-
-
-
     <div class="header-total pl-3">
       <h2>124 All Entries</h2>
       <h3 class="normal"> {{allEntries | currency:'&#8377;'}}</h3>
@@ -22,7 +18,7 @@
         <mat-menu #menu="matMenu" xPosition="before">
           <ul class="list-style-none p-0 m-0 drop-down-list">
             <li>
-              <button mat-button>Filter</button>
+              <a href="javascript:void(0)" mat-button routerLink="/filter">Filter</a>
             </li>
             <li>
               <button mat-button (click)="openDialog()">Export to Excel</button>
@@ -38,7 +34,9 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
+
+
 
 <div class="navi" [ngClass]="HeaderToggle ? 'in': 'out'">
   <div class="uk-nav-head">
@@ -50,16 +48,16 @@
   <div class="nav-list pt-2">
     <ul class="m-0 p-0">
       <li>
-        <a href="javascript:void(0)">Balance</a>
+        <a href="javascript:void(0)" routerLink="/balance" routerLinkActive="active">Balance</a>
       </li>
       <li>
-        <a href="javascript:void(0)">Home</a>
+        <a href="javascript:void(0)" routerLink="/">Home</a>
       </li>
       <li>
-        <a href="javascript:void(0)">Settings</a>
+        <a href="javascript:void(0)" routerLink="/settings">Settings</a>
       </li>
       <li>
-        <a href="javascript:void(0)" class="bold">Walkover Web Solutio…
+        <a href="javascript:void(0)" class="bold" routerLink="/switch-company">Walkover Web Solutio…
           <i class="icon-copy pull-right"></i>
         </a>
       </li>
@@ -91,7 +89,7 @@
 
 
 <!-- header green 2 -->
-<div class="header header-green">
+<!-- <div class="header header-green">
   <div class="inner-header align-items-center justify-content-between">
     <div class="d-flex align-items-center">
       <div class="toggle-nav">
@@ -110,7 +108,7 @@
     </p>
 
   </div>
-</div>
+</div> -->
 
 
 
@@ -123,9 +121,8 @@
       </div>
 
       <div class="header-total pl-3">
-        <h3 class="mb-0 font-20">0 Entries</h3>
+        <h3 class="mb-0 font-20 normal">0 Entries</h3>
       </div>
       <a href="javascript:void(0)" class="nowrap font-14">Clear all filter</a>
-
     </div>
   </div> -->

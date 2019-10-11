@@ -53,7 +53,6 @@ import {
 } from '@angular/material';
 import { SelectListComponent } from './components/select-list/select-list.component';
 import { SelectSelectWithdrawalAcComponent } from './components/select-select-withdrawal-ac/select-select-withdrawal-ac.component';
-import { AccountTypeComponent } from './components/account-type/account-type.component';
 import { ModalExportExcelComponent } from './components/modal-export-excel/modal-export-excel.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { TotalAmountComponent } from './components/total-amount/total-amount.component';
@@ -69,7 +68,7 @@ import { SalesIncomeComponent } from './components/sales-income/sales-income.com
 
 
 @NgModule({
-  declarations: [PettyCashComponent, AllEntriesComponent, SelectActionComponent, CalculatorComponent, HeaderComponent, WithdrawalDepositComponent, SelectListComponent, SelectSelectWithdrawalAcComponent, AccountTypeComponent, ModalExportExcelComponent, FilterComponent, TotalAmountComponent, SelectModeComponent, SelectCreditorsComponent, DeleteEnryComponent, BalanceComponent, SettingsComponent, ExpanseCategoriesComponent, SwitchCompanyComponent, SalesIncomeComponent],
+  declarations: [PettyCashComponent, AllEntriesComponent, SelectActionComponent, CalculatorComponent, HeaderComponent, WithdrawalDepositComponent, SelectListComponent, SelectSelectWithdrawalAcComponent, ModalExportExcelComponent, FilterComponent, TotalAmountComponent, SelectModeComponent, SelectCreditorsComponent, DeleteEnryComponent, BalanceComponent, SettingsComponent, ExpanseCategoriesComponent, SwitchCompanyComponent, SalesIncomeComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,

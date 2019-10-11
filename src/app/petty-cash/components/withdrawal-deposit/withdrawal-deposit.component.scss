@@ -1,0 +1,35 @@
+.account-list {
+  ul {
+    padding: 0px;
+    list-style-type: none;
+    margin: 10px 0;
+  }
+}
+.account-list {
+  ul {
+    li {
+      padding: 15px;
+      font-size: 14px;
+    }
+  }
+}
+.icon-list {
+  color: #67aa5a;
+  margin-right: 15px;
+  font-size: 18px;
+}
+.account-list {
+  ul {
+    li {
+      input {
+        height: 20px;
+        border: 1px solid #ccc;
+        padding: 0 10px;
+        width: 80px;
+      }
+      input:focus {
+        outline: none;
+      }
+    }
+  }
+}

@@ -1,1 +1,84 @@
-<p>withdrawal-deposit works!</p>
+<main class="main-page">
+  <div class="header header-green">
+    <div class="inner-header">
+      <div class="toggle-nav">
+        <a href="javascript:void(0)" routerLink="/" class="btn-toggle">
+          <i class="icon-arrow-left"></i>
+        </a>
+      </div>
+
+      <div class="header-total pl-3">
+        <h2>Withdrawal/Deposit</h2>
+        <h3 class="normal mb-0"> {{WithDrawalDeposit | currency:'USD'}}</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="account-list">
+    <ul>
+      <li>
+        <span class="icon-calender icon-list"></span>
+        <span>Today, 28 Aug, 19</span>
+      </li>
+      <li>
+        <span class="icon-pencil icon-list"></span>
+        <span class="text-gray">Write a note</span>
+      </li>
+      <li>
+        <a href="javascript:void(0)" (click)="openDialog()">
+          <div class="d-flex width-100">
+              <span class="icon-payment icon-list"></span>
+              <div class="clearfix width-100">
+                <p class="text-gray">Withdrawal from</p>
+                <p class="text-custom">Banl of America</p>
+              </div>
+              <span class="width-100 text-right text-gray">$100
+                <span class="text-gray ml-1">
+                  <i class="icon-arrow-right"></i>
+                </span>
+              </span>
+          </div>
+        </a>
+      </li>
+      <li>
+          <a href="javascript:void(0)" (click)="openDialog()">
+              <div class="d-flex width-100">
+                  <span class="icon-payment icon-list"></span>
+                  <div class="clearfix width-100">
+                    <p class="text-gray">Deposit to</p>
+                    <p class="text-custom">Emirates NBD</p>
+                  </div>
+                  <span class="width-100 text-right text-gray">AED 350
+                    <span class="text-gray ml-1">
+                      <i class="icon-arrow-right"></i>
+                    </span>
+                  </span>
+              </div>
+            </a>
+      </li>
+
+      <li>
+          <div class="d-flex width-100">
+        <span class="icon-switch-icon icon-list"></span>
+        <div class="width-100">
+          <p class="text-gray">Conversion Rates</p>
+          <span>
+            1 AED
+            <span class="pr-1 pl-1">=</span>
+            <input type="text" placeholder="0.27" class="text-right"> USD
+          </span>
+        </div>
+        <span class="text-right d-flex align-items-end pb-05">
+          <a href="javascript:void(0)" class="text-gray">
+            <i class="icon-sort"></i>
+          </a>
+        </span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <a href="javascript:void(0)" mat-raised-button class="action-icon bg-green" routerLink="/"><i class=" icon-check"></i></a>
+
+</main>

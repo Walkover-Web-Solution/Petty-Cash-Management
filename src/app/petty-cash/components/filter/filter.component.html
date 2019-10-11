@@ -1,5 +1,19 @@
 <main class="main-page">
-  <app-header></app-header>
+
+  <div class="header">
+    <div class="inner-header justify-content-between align-items-center">
+      <div class="toggle-nav">
+        <a href="javascript:void(0)" class="btn-toggle"  routerLink="/">
+          <i class="icon-arrow-left"></i>
+        </a>
+      </div>
+
+      <div class="header-total pl-3">
+        <h3 class="mb-0 font-20 normal">0 Entries</h3>
+      </div>
+      <a href="javascript:void(0)" class="nowrap font-14">Clear all filter</a>
+    </div>
+  </div>
 
   <div class="filter-tabs">
     <mat-tab-group animationDuration="0ms">
@@ -62,32 +76,37 @@
 
         <div class="select-list select-box mb-2">
           <mat-selection-list #entry>
-              <mat-list-option *ngFor="let entry of entries">
-                {{entry}}
-              </mat-list-option>
+            <mat-list-option *ngFor="let entry of entries">
+              {{entry}}
+            </mat-list-option>
           </mat-selection-list>
         </div>
 
         <div class="select-list select-box">
           <mat-selection-list #purchase>
-              <mat-list-option *ngFor="let purchase of purchased">
-                {{purchase}}
-              </mat-list-option>
+            <mat-list-option *ngFor="let purchase of purchased">
+              {{purchase}}
+            </mat-list-option>
           </mat-selection-list>
         </div>
 
       </mat-tab>
 
       <mat-tab label="Entries">
-          <div class="select-list">
-              <mat-selection-list #user>
-                  <mat-list-option *ngFor="let user of users">
-                    {{user}}
-                  </mat-list-option>
-              </mat-selection-list>
-            </div>
+        <div class="select-list">
+          <mat-selection-list #user>
+            <mat-list-option *ngFor="let user of users">
+              {{user}}
+            </mat-list-option>
+          </mat-selection-list>
+        </div>
       </mat-tab>
 
     </mat-tab-group>
   </div>
+
+  <a href="javascript:void(0)" mat-raised-button class="action-icon" routerLink="/"><i class=" icon-check"></i></a>
+
+
+
 </main>

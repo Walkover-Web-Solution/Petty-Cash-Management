@@ -64,11 +64,12 @@ import { BalanceComponent } from './components/balance/balance.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { ExpanseCategoriesComponent } from './components/expanse-categories/expanse-categories.component';
 import { SwitchCompanyComponent } from './components/switch-company/switch-company.component';
+import { SalesIncomeComponent } from './components/sales-income/sales-income.component';
 
 
 
 @NgModule({
-  declarations: [PettyCashComponent, AllEntriesComponent, SelectActionComponent, CalculatorComponent, HeaderComponent, WithdrawalDepositComponent, SelectListComponent, SelectSelectWithdrawalAcComponent, AccountTypeComponent, ModalExportExcelComponent, FilterComponent, TotalAmountComponent, SelectModeComponent, SelectCreditorsComponent, DeleteEnryComponent, BalanceComponent, SettingsComponent, ExpanseCategoriesComponent, SwitchCompanyComponent],
+  declarations: [PettyCashComponent, AllEntriesComponent, SelectActionComponent, CalculatorComponent, HeaderComponent, WithdrawalDepositComponent, SelectListComponent, SelectSelectWithdrawalAcComponent, AccountTypeComponent, ModalExportExcelComponent, FilterComponent, TotalAmountComponent, SelectModeComponent, SelectCreditorsComponent, DeleteEnryComponent, BalanceComponent, SettingsComponent, ExpanseCategoriesComponent, SwitchCompanyComponent, SalesIncomeComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,

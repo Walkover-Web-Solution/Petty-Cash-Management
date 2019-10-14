@@ -8,11 +8,13 @@ import { ExpanseCategoriesComponent } from './components/expanse-categories/expa
 import { SwitchCompanyComponent } from './components/switch-company/switch-company.component';
 import { WithdrawalDepositComponent } from './components/withdrawal-deposit/withdrawal-deposit.component';
 import { SalesIncomeComponent } from './components/sales-income/sales-income.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   imports: [
     RouterModule.forChild([
-        { path: '', component: PettyCashComponent, pathMatch: 'full' },
+        { path: '', component: LoginComponent, pathMatch: 'full' },
+        { path: 'pages', component: PettyCashComponent, pathMatch: 'full' },
         { path: 'withdrawal-deposit', component: WithdrawalDepositComponent, pathMatch: 'full' },
         { path: 'filter', component: FilterComponent, pathMatch: 'full' },
         { path: 'balance', component: BalanceComponent, pathMatch: 'full' },
@@ -20,7 +22,6 @@ import { SalesIncomeComponent } from './components/sales-income/sales-income.com
         { path: 'expanse-categories', component: ExpanseCategoriesComponent, pathMatch: 'full' },
         { path: 'switch-company', component: SwitchCompanyComponent, pathMatch: 'full' },
         { path: 'sales-income', component: SalesIncomeComponent, pathMatch: 'full' },
-
     ])
   ],
   exports: [RouterModule]

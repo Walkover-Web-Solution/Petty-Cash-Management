@@ -11,6 +11,7 @@ body {
 a {
   color: #27A1E4;
 }
+* {box-sizing: border-box;}
 $white: #fff;
 $black: #000;
 $success: #67AA5A;
@@ -116,6 +117,18 @@ button,button:focus {outline: none;box-shadow: none;}
   display: inline-block;
   color: #fff;
   padding: 7px 0;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.btn-custom {
+  background: $dark-green;
+  color: #fff;
+  border-radius: 2px !important;
+  font-size: 16px;
+  padding: 5px !important;
+  font-weight: normal;
 }
 .header-total h2 {
   font-weight: normal;
@@ -318,19 +331,50 @@ a, a:hover {
   max-width: 90vw !important;
   overflow-y: auto;
 }
+.img-responsive {
+  width: 100%;
+}
+.relative {
+  position: relative;
+}
 .btn-link {
   color: #27A1E4;
   font-weight: normal;
 }
+.btn-red-outline, .btn-black-outline {
+  font-size: 14px;
+  padding: 10px 25px;
+  border-radius: 2px;
+  background: #E8E8E8;
+  cursor: pointer;
+  transition: .5s all ease;
+}
+.btn-red-outline {
+  border: 1px solid #CC4949;
+  color: #CC4949;
+}
+.btn-red-outline:hover, .btn-red-outline:focus {
+  background:  #CC4949;
+  color: #fff;
+}
+.btn-black-outline:hover, .btn-black-outline:focus {
+  background:  #0B1B46;
+  color: #fff;
+}
+.btn-black-outline {
+  border: 1px solid #0B1B46;
+  color: #0B1B46;
+}
 .mat-dialog-container {
   padding: 0px !important;
   background: none !important;
+  border-radius: 2px !important;
 }
 .action-icon {
   position: fixed !important;
   right: 15px;
   bottom: 10px;
-  background: #19BC9C;
+  background: $dark-green;
   color: #fff;
   width: 55px;
   min-width: 55px !important;
@@ -465,6 +509,18 @@ a, a:hover {
 .mat-primary .mat-pseudo-checkbox-checked {
   background: #0B1B46;
 }
+
+.selected-date .mat-form-field-wrapper {
+  padding: 0px;
+}
+.selected-date .mat-form-field-wrapper .mat-form-field-infix {
+  width: 100%;
+  display: block;
+}
+.selected-date .mat-form-field-underline.ng-tns-c2-0.ng-star-inserted, .selected-date .mat-form-field-suffix {
+  display: none;
+}
+
 
 
 @media only screen and (max-width: 767px) {

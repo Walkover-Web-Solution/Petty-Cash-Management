@@ -10,26 +10,81 @@
     li {
       padding: 15px;
       font-size: 14px;
-    }
-  }
-}
-.icon-list {
-  color: #67aa5a;
-  margin-right: 15px;
-  font-size: 18px;
-}
-.account-list {
-  ul {
-    li {
       input {
         height: 20px;
         border: 1px solid #ccc;
         padding: 0 10px;
-        width: 80px;
+        width: 50px;
       }
       input:focus {
         outline: none;
       }
     }
   }
+}
+.icon-list {
+  color: #45A7E6;
+  margin-right: 15px;
+  font-size: 18px;
+}
+.file-upload {
+ ul {
+  display: flex;
+  overflow-y: auto;
+  li {
+    padding: 0 10px 0 0;
+    a {
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+      display: flex;
+      background: #E3E3E5;
+      color: #999999;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      position: relative;
+      img {
+        max-height: 60px;
+        min-height: 60px;
+      }
+    }
+    }
+  }
+}
+.selected-date {
+input {
+    padding: 0px !important;
+    border: 0px !important;
+  }
+}
+.textarea {
+  width: 90%;
+  display: block;
+  resize: none;
+  background: no-repeat;
+  border: 0px;
+  font-size: 14px;
+  color: #969696eb;
+  margin-left: 30px;
+}
+.textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+.img-close {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  color: #fff;
+  font-size: 12px;
+}
+i.icon-close-img {
+  color: white;
+  font-size: 10px;
+  display: block;
+  position: absolute;
+  z-index: 9;
+  top: 5px;
+  right: 5px;
 }

@@ -1,0 +1,26 @@
+<div class="select-action">
+    <h3 class="mb-2">Select Action</h3>
+    <div class="clearfix text-center">
+      <div class="action-box">
+        <a href="javascript:void(0)" routerLink="/sales-income" (click)="addUser()" mat-dialog-close [disabled]="formisvalid" mat-button class="text-primary">
+          <i class="icon-income"></i>
+          <h4>Sales/Income</h4>
+
+
+
+        </a>
+      </div>
+      <div class="action-box">
+        <a href="javascript:void(0)" routerLink="/sales-income" (click)="addUser()" mat-dialog-close [disabled]="formisvalid" mat-button class="text-warning">
+          <i class="icon-hand"></i>
+          <h4>Purchase/Expenses</h4>
+        </a>
+      </div>
+      <div class="action-box">
+        <a href="javascript:void(0)" routerLink="/sales-income" (click)="addUser()" mat-dialog-close [disabled]="formisvalid" mat-button class="text-success">
+          <i class="icon-hand-down"></i>
+          <h4>Withdrawal/Deposit</h4>
+        </a>
+      </div>
+    </div>
+  </div>

@@ -6,8 +6,10 @@
       <ul class="mt-0">
         <li *ngFor="let SelectWithdrawal of SelectWithdrawalAC; let i = index">
           <input name="Sales" id="{{'select' + i}}" type="radio">
-          <label for="{{'select' + i}}" class="d-flex justify-content-between">{{SelectWithdrawal.selectItem}}
-            <span class="font-12">{{SelectWithdrawal.itemPrice | currency:'USD'}}</span>
+          <label for="{{'select' + i}}" class="d-flex justify-content-between">
+            <span><i class="icon-cash mr-05 font-12 text-gray"></i>
+              {{SelectWithdrawal.selectItem}}</span>
+            <span class="font-12 text-gray"> {{SelectWithdrawal.itemPrice | currency:'USD'}}</span>
           </label>
         </li>
       </ul>

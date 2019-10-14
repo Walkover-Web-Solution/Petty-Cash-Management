@@ -64,11 +64,11 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { ExpanseCategoriesComponent } from './components/expanse-categories/expanse-categories.component';
 import { SwitchCompanyComponent } from './components/switch-company/switch-company.component';
 import { SalesIncomeComponent } from './components/sales-income/sales-income.component';
-
-
+import { LoginComponent } from './components/login/login.component';
+import { SelectServicesComponent } from './components/select-services/select-services.component';
 
 @NgModule({
-  declarations: [PettyCashComponent, AllEntriesComponent, SelectActionComponent, CalculatorComponent, HeaderComponent, WithdrawalDepositComponent, SelectListComponent, SelectSelectWithdrawalAcComponent, ModalExportExcelComponent, FilterComponent, TotalAmountComponent, SelectModeComponent, SelectCreditorsComponent, DeleteEnryComponent, BalanceComponent, SettingsComponent, ExpanseCategoriesComponent, SwitchCompanyComponent, SalesIncomeComponent],
+  declarations: [PettyCashComponent, AllEntriesComponent, SelectActionComponent, CalculatorComponent, HeaderComponent, WithdrawalDepositComponent, SelectListComponent, SelectSelectWithdrawalAcComponent, ModalExportExcelComponent, FilterComponent, TotalAmountComponent, SelectModeComponent, SelectCreditorsComponent, DeleteEnryComponent, BalanceComponent, SettingsComponent, ExpanseCategoriesComponent, SwitchCompanyComponent, SalesIncomeComponent, LoginComponent, SelectServicesComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
@@ -163,7 +163,8 @@ import { SalesIncomeComponent } from './components/sales-income/sales-income.com
     SelectActionComponent,
     ModalExportExcelComponent,
     TotalAmountComponent,
-    SelectModeComponent
+    SelectModeComponent,
+    DeleteEnryComponent
   ]
 })
 export class PettyCashModule { }

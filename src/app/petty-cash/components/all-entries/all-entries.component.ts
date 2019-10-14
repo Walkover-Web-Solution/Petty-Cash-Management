@@ -26,6 +26,9 @@ export class AllEntriesComponent implements OnInit {
 
   constructor(public dialog: MatDialog) { }
   openDialog(): void {
+
+    this.dialog.open(SelectActionComponent, { disableClose: true });
+
     const dialogRef = this.dialog.open(SelectActionComponent, {
       width: '330px',
       //data: {name: this.name, animal: this.animal}
@@ -35,6 +38,8 @@ export class AllEntriesComponent implements OnInit {
       //this.animal = result;
     });
   }
+
+
 
   ngOnInit() {
   }

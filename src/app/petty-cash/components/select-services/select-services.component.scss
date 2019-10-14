@@ -1,0 +1,22 @@
+.action-box {
+  a {
+    display: block;
+    padding: 20px;
+    border: 1px solid;
+    margin-bottom: 15px;
+    border-bottom: 4px solid;
+    border-radius: 4px;
+    h4 {
+      font-size: 20px;
+    }
+  }
+  i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    display: block;
+  }
+}
+.select-action {
+  background: #fff;
+  padding: 15px;
+}

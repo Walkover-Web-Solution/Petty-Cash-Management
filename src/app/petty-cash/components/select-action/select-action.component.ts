@@ -8,10 +8,10 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 })
 export class SelectActionComponent implements OnInit {
 
+
   isLinear = false;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
-
 
   constructor(private _formBuilder: FormBuilder) {}
   ngOnInit() {

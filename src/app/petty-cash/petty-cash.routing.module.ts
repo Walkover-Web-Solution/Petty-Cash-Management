@@ -13,8 +13,8 @@ import { LoginComponent } from './components/login/login.component';
 @NgModule({
   imports: [
     RouterModule.forChild([
-        { path: '', component: LoginComponent, pathMatch: 'full' },
-        { path: 'pages', component: PettyCashComponent, pathMatch: 'full' },
+        { path: '', component: PettyCashComponent, pathMatch: 'full' },
+        { path: 'login', component: LoginComponent, pathMatch: 'full' },
         { path: 'withdrawal-deposit', component: WithdrawalDepositComponent, pathMatch: 'full' },
         { path: 'filter', component: FilterComponent, pathMatch: 'full' },
         { path: 'balance', component: BalanceComponent, pathMatch: 'full' },

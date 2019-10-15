@@ -21,15 +21,10 @@ $primary: #45A7E6;
 $warning: #F2913B;
 $dark-blue: #0B1B46;
 $dark-green: #19BC9C;
-.bg-green {
-  background: $success !important;
-}
-.bg-primary {
-  background: $primary !important;
-}
-.text-green {
-  color: $success;
-}
+.bg-green {background: $success !important;}
+.bg-primary {background: $primary !important;}
+.bg-warning {background: $warning !important;}
+.text-green {color: $success;}
 h1,h2,h3,h4,h5,h6,p {
   margin: 0px;
 }

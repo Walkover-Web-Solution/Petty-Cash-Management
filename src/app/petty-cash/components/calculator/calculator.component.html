@@ -37,11 +37,11 @@
 
   <div class="d-flex justify-content-between clear-btn">
     <div>
-      <button type="button" (click)="clickOperator('allClear')">Clear</button>
+      <button type="button" mat-button (click)="clickOperator('allClear')">Clear</button>
     </div>
     <div>
-      <button type="button" (click)="closeDialog()">Cancel</button>
-      <button type="button" class="text-primary">Done</button>
+      <button type="button" mat-button mat-dialog-close (click)="closeDialog()">Cancel</button>
+      <button type="button" mat-button mat-dialog-close class="text-primary">Done</button>
     </div>
   </div>
 </div>

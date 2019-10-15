@@ -21,6 +21,7 @@
   <div class="entity-img" *ngIf="allEntry.ProductImg">
     <img src="{{allEntry.ProductImg}}" *ngIf="allEntry.ProductImg" alt="">
   </div>
+  <p *ngIf="allEntry.userName" class="font-14 text-gray mt-1 mb-0"><i class="icon-user font-12 mr-05"></i> {{allEntry.userName}}</p>
 </div>
 
 <a href="javascript:void(0)" mat-raised-button (click)="openDialog()" class="action-icon"><i class="icon-plus"></i></a>
